@@ -23,4 +23,13 @@ public class ToastUtils {
             }
         });
     }
+
+    public static void show3(Context context, String msg) {
+        new Handler(Looper.getMainLooper()).post(new Runnable() {
+            @Override
+            public void run() {
+                Toast.makeText(context, msg, Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
 }
