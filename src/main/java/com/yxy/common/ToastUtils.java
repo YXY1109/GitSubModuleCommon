@@ -24,6 +24,7 @@ public class ToastUtils {
         });
     }
 
+    //测试
     public static void show3(Context context, String msg) {
         new Handler(Looper.getMainLooper()).post(new Runnable() {
             @Override
